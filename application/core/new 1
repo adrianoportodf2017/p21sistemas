@@ -1,0 +1,263 @@
+                 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                                           
+                          <div class="col-md-12">
+                               <div class="card-body wizard-content">
+                                <h4 class="card-title">Cadastro do Cliente</h4>
+                                <form action="#" class="tab-wizard wizard-circle">
+                                    <!-- Step 1 -->
+                                    <h6>Informaçoes Pessoais</h6>
+                                    <section>
+									
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="Nome">Nome:</label>
+                                                    <input type="text" class="form-control" id="Nome"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="lastName1">RG:</label>
+                                                    <input type="text" class="form-control" id="RG"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="CPF">CPF :</label>
+                                                    <input type="text" class="form-control" id="CPF"> </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="Telfone">Telfone :</label>
+                                                    <input type="tel" class="form-control" id="telefone"> </div>
+                                            </div>
+                                             <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="Celular">Celular:</label>
+                                                    <input type="tel" class="form-control" id="celular"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                      <div class="demo-radio-button">
+                                                    <label for="EstadoCivil">EstadoCivil :</label>
+                                                    <input name="group4" type="radio" id="radio_7" class="radio-col-red" checked="">
+                                                            <label for="radio_7">Solteiro</label>
+                                                            <input name="group4" type="radio" id="radio_8" class="radio-col-pink">
+                                                            <label for="radio_8">Casado</label>
+                                            </div>
+                                            </div>  </div>
+                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                 <div class="demo-radio-button">
+                                                        <label for="EstadoCivil">Sexo :</label>
+                                                <input name="group5" type="radio" id="radio_30" class="with-gap radio-col-red" checked="">
+                                                <label for="radio_30">Feminino</label>
+                                                <input name="group5" type="radio" id="radio_31" class="with-gap radio-col-pink">
+                                                <label for="radio_31">Masculino</label>
+                                     </div>
+                                            </div>  </div>
+                                                <div class="col-md-6">
+                                                <div class="form-group">
+                                                 <div class="demo-radio-button">
+                                                 <label for="">Pessoa fisica ou Jurica :</label>
+                                                <input name="fisico" type="radio" id="fisico" class="with-gap radio-col-red" checked="">
+                                                <label for="jurico">fisico</label>
+                                                <input name="fisico" type="radio" id="fisico" class="with-gap radio-col-pink">
+                                                <label for="fisico">jurico</label>
+                                     </div>
+                                            </div>  </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="date1">Data de Nascimento :</label>
+                                                    <input type="date" class="form-control" id="date1"> </div>
+                                        </div>
+                                        </div> 
+                                          </section>  
+                                      
+                                
+                                    
+                                    <!-- Step 2 -->
+                                    <h6>Trabalho</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="Cargo">Cargo :</label>
+                                                    <input type="text" class="form-control" id="Cargo"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="videoUrl1">Nome da Empresa :</label>
+                                                    <input type="text" class="form-control" id="empresa">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="shortDescription1">Descrição do Cargo :</label>
+                                                    <textarea name="shortDescription" id="shortDescription1" rows="6" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 3 -->
+                                    <h6>Conjuge</h6>
+                                     <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="Nome">Nome:</label>
+                                                    <input type="text" class="form-control" id="Nome"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="lastName1">RG:</label>
+                                                    <input type="text" class="form-control" id="RG"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="CPF">CPF :</label>
+                                                    <input type="text" class="form-control" id="CPF"> </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="Telfone">Telfone :</label>
+                                                    <input type="tel" class="form-control" id="telefone"> </div>
+                                            </div>
+                                             <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="Celular">Celular:</label>
+                                                    <input type="tel" class="form-control" id="celular"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="date1">Data de Nascimento :</label>
+                                                    <input type="date" class="form-control" id="date1"> </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 4 -->
+                                    <h6>Endereço</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="behName1">Endereço :</label>
+                                                    <input type="text" class="form-control" id="behName1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Numero</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Bairro</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                 <div class="form-group">
+                                                    <label for="participants1">Cidade</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                 <div class="form-group">
+                                                    <label for="participants1">Estado</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                 <div class="form-group">
+                                                    <label for="participants1">CEP</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Complemento</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                </div>
+                                                                                           </div>
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                           <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                </div>
+                                </div>   </div>   
+                                <!-- /.modal -->
+                          
+						
+<!--   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ modal adicionar e remover usarios listar $$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->	
+
+
+
+
+ <div class="modal fade usuarios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                           <div class="card-body">                                
+                          <div class="col-md-12">
+                               <div class="card-body wizard-content">
+                                <h4 class="card-title">Lista de Usuario do Sistema </h4>
+                      
+                            </div>
+                        </div>
+				
+										 <?php foreach ($usuarios as $r) {?>
+                                              
+                                                  <table class="display nowrap table table-hover table-striped table-bordered dataTable" id="usuario" >                                             
+                                                 <h6> <td style="width:50px;"><span class="round"><?php echo $r->idUsuarios;?></span><?php echo $r->nome;?></h6><small class="text-muted"><?php echo $r->cargo;?></small></td>
+                                                 <td><?php echo $r->celular;?></td>
+                                                 <tr class="table-bordered"><td><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Editar</a></td>
+												     <td><a class="btn btn-danger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Deletar</a></td>												 
+												 </tr >
+												 </table>
+												 <div class="collapse" id="collapseExample"> 
+												 <table class="footable-details table table-bordered">
+												 <tbody>
+												 <tr>
+												 <th>ID</th>
+												 <td class="" style="display: table-cell;">1</td>
+												 </tr>
+												 <tr><th>Nome</th>
+												 <td style="display: table-cell;">Adriano Alves</td>
+												 </tr>
+												 <tr>
+												 <th>Status</th>
+												 <td class="" style="display: table-cell;"><span class="label label-danger">Ativo</span> </td>
+												 </tr>
+												 <tr><th> Resetar Senha</th>
+												 <td style="display: table-cell;">*************</td></tr>
+												 </tbody>
+												 </table>
+												
+                                                </div>
+												
+											
+                                            
+												
+												</div>
+										 <?php  } ?>
+                                      
+                                </div>
+                            </div>
+                               <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                </div>
+								
+						
+						                                 
