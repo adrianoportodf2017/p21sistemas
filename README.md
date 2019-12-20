@@ -3,8 +3,8 @@ Seja bem vindo ao desafio P21 Sistemas
 ###################
 Quem sou eu?
 ###################
+[![DNA P21 SISTEMAS](https://img.youtube.com/vi/EnxjxqjHtxM/0.jpg)](https://www.youtube.com/watch?v=TygQWqYeHAc&feature=youtu.be)
 
-https://www.youtube.com/watch?v=TygQWqYeHAc&feature=youtu.be
 
 *******************
 Sobre o desafio
