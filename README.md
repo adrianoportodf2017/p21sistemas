@@ -18,11 +18,17 @@ Enviar emails com falha a cada 5 minutos.
 
 
 Tecnologias usadas
+
 bcit-ci/CodeIgniter
+
 twbs/bootstrap
+
 jquery/jquery
+
 jquery/jquery-ui
-Matrix Admin
+
+
+
 Requerimentos
 PHP >= 5.5.0
 MySQL
