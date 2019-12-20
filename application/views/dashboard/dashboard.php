@@ -49,9 +49,9 @@ $xml = $this->dados['xml'];
                                 </fieldset>
                                 
                                 <div class="form-group col-md-12">
-                                    <button type="submit" class="btn btn-outline-primary btn-lg" id=""><b>Atualizar</b></button><br>
-										<span>OBS:<b>Caso a lista já estiver inserida no sistema ao importar ele não duplicara as informações,<br>
-                                        mais atualizara caso acha alguma modificação.</b></span>
+                                    <button type="submit" class="btn btn-outline-primary btn-lg" id=""><b>Importar arquivo</b></button><br>
+										<span>OBS:<b>Caso a lista já esteja inserida no sistema, ao importá-la não serão duplicadas as informações,<br>
+                                        mas atualizará caso haja alguma modificação.</b></span>
                                 </div> 
                             </form> 
                             <h2 class="card-title">Cartórios Cadastrados</h2>
@@ -300,7 +300,7 @@ $xml = $this->dados['xml'];
                                 <input type=hidden name="enviado" value="http://localhost/base/dashboard/contato?email=enviado">
                                 <p><b>Nome:</b><br>
                                     <input type=text name="nome" id="nome" size="45"></p><br>
-                                <p><b>Email(para enviar para mais de uma pessoa acrescente a virgula separando os email, sendo o que o limite e de 100 emails por vez):</b><br>
+                                <p><b>Email (Obs: Para enviar para mais de uma pessoa, acrescente a vírgula separando os emails, sendo que o limite é de 100 e-mails por vez):</b><br>
                                     <input type=text name="email" id="email" size="45" placeholder="ex: adrianobr00@gmail.com, adriano14orama@gmail.com, adrianomsn-2006@gmail.com"></p><br>
                                 <p><b>Assunto:</b><br>
                                     <input type=text name="assunto" id="assunto" size="45"></p><br>
@@ -309,7 +309,7 @@ $xml = $this->dados['xml'];
                                 <p><input class="btn btn-outline-primary"type="reset" value="Limpar Formulário"></p>
                             </form>
                             <button id="email" name="email" class="btn btn-outline-primary btn-lg" type="button" onclick="enviar()">Enviar email</button> 
-                            <h4>Segue os emails cadastrados, basta copiar e colar no destinatario</h4>
+                            <h4>Seguem os e-mails cadastrados, basta copiar e colar no destinatário.</h4>
                          <?php foreach ($xml as $r)
                              
                              {

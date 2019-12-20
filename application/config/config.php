@@ -1,5 +1,7 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php defined('BASEPATH') or exit('No direct script access allowed');
+
+
+$config['app_version'] = '3.14.1';
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'enter_baseurl';
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -323,7 +326,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '2925c9bf249380c';
+$config['encryption_key'] = 'enter_encryption_key';
 
 /*
 |--------------------------------------------------------------------------

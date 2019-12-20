@@ -5,7 +5,7 @@
 $msg = 'success';
 
 ?>
-    <head>
+<head>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,23 +14,29 @@ $msg = 'success';
         <meta name="description" content="">
         <meta name="Adriano Alves" content="">
         <!-- Favicon icon -->
-        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(''); ?>/assets/images/about.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://desafiop21.000webhostapp.com//assets/images/about.png">
         <title>Desafio P21 Sistemas</title>
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- chartist CSS -->
-        <link href="<?php echo base_url(''); ?>assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
-        <link href="<?php echo base_url(''); ?>assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
-        <link href="<?php echo base_url(''); ?>assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+        <link href="https://desafiop21.000webhostapp.com/assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+        <link href="https://desafiop21.000webhostapp.com/assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+        <link href="https://desafiop21.000webhostapp.com/assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
         <!--This page css - Morris CSS -->
-        <link href="<?php echo base_url(''); ?>assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+        <link href="https://desafiop21.000webhostapp.com/assets/plugins/c3-master/c3.min.css" rel="stylesheet">
         <!-- Custom CSS -->
-        <link href="<?php echo base_url(''); ?>assets/css/style.css" rel="stylesheet">
-        <link href="<?php echo base_url() ?>assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
-        <link href="<?php echo base_url() ?>assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+        <link href="https://desafiop21.000webhostapp.com/assets/css/style.css" rel="stylesheet">
+        <link href="https://desafiop21.000webhostapp.com/assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
+        <link href="https://desafiop21.000webhostapp.com/assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
         <!-- You can change the theme colors from here -->
-        <link href="<?php echo base_url(''); ?>/assets/css/colors/default.css" id="theme" rel="stylesheet">
-        <link href="<?php echo base_url(''); ?>/assets/plugins/bootstrap-table/dist/bootstrap-table2.min.css" rel="stylesheet">
+        <link href="https://desafiop21.000webhostapp.com//assets/css/colors/default.css" id="theme" rel="stylesheet">
+        <link href="https://desafiop21.000webhostapp.com//assets/plugins/bootstrap-table/dist/bootstrap-table2.min.css" rel="stylesheet">
+               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
 
     </head>
 

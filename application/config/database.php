@@ -8,7 +8,7 @@ $db['default'] = array(
     'username' => 'enter_db_username',
     'password' => 'enter_db_password',
     'database' => 'enter_database_name',
-    'dbdriver' => 'mysqli',
+  'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => false,
     'db_debug' => (ENVIRONMENT !== 'production'),
@@ -19,7 +19,7 @@ $db['default'] = array(
     'swap_pre' => '',
     'encrypt' => false,
     'compress' => false,
-    'stricton' => false,
+    'stricton' => true,
     'failover' => array(),
     'save_queries' => true
 );
