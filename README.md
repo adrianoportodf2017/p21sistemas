@@ -60,13 +60,12 @@ Instalação
 
 Faça o download dos arquivos.
 
+copie os arquivo da pastar p21sistemas para a pasta do webserve ou da pasta do servidor local
+
 Extraia o pacote e copie para seu webserver.
 
 Acesse sua URL e inicie a instalação, é bem simples, basta preencher as informações no assistente de instalação .
 
-Configure o email de envio no arquivo email.php
-
-Configurar cron jobs para envio de e-mail
 
 
 
@@ -86,3 +85,4 @@ jquery/jquery-ui
 Requerimentos
 PHP >= 5.5.0
 MySQL
+servidor apache
