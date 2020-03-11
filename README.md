@@ -1,7 +1,7 @@
 ###Seja bem vindo 
 
 ###################
-Quem sou eu?Clique na imagem e descubra:)
+Quem sou eu?Clique na imagem abaixo:)
 ###################
 [![DNA P21 SISTEMAS](http://lounge.obviousmag.org/um_ponto_no_infinito/quem-sou-eu.jpg)](https://www.youtube.com/watch?v=TygQWqYeHAc&feature=youtu.be)
 
@@ -10,11 +10,11 @@ Quem sou eu?Clique na imagem e descubra:)
  * [Arquivo XML](https://github.com/p21sistemas/vikings/blob/master/Cart%C3%B3rios-CNJ.xml) - Arquivo XML para importação
 
 ************
-Instalação
-************
-
 Intruções de instalação e configuração
 ---------------------------------------
+************
+
+
 
 * Requerimento
 
