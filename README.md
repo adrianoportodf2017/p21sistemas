@@ -1,88 +1,77 @@
-###Seja bem vindo ao desafio P21 Sistemas
+###Seja bem vindo 
 
 ###################
 Quem sou eu?Clique na imagem e descubra:)
 ###################
 [![DNA P21 SISTEMAS](http://lounge.obviousmag.org/um_ponto_no_infinito/quem-sou-eu.jpg)](https://www.youtube.com/watch?v=TygQWqYeHAc&feature=youtu.be)
 
-
-*******************
-Sobre o desafio
-*******************
-# DESAFIO TÉCNICO
-
-## Anoreg (o cliente)
-- É uma associação criada para representar os tabeliães de cartórios em qualquer instância ou Tribunal.
-- Representa os interesses em comum da classe.
-- Também trabalham com cursos e eventos.
-- São financiados por contribuições dos cartórios de todo o Brasil.
-- O Conselho Nacional de Justiça (CNJ) regulamenta e fiscaliza o trabalho dos cartórios.
-- Como eles possuem os cartórios cadastrados, enviam para a Anoreg.
-
-## O problema
-
--	A Anoreg possui uma base dos cartórios associados em planilha Excel.
--	A planilha é atualizada mensalmente com base em um arquivo XML enviado pelo CNJ. A funcionária da Anoreg abre o arquivo XML em um navegador e atualiza a planilha copiando e colando os dados. 
--	Os campos telefone e e-mail não são informados pelo CNJ, sendo atualizados manualmente na planilha.
--	Existem cartórios que não são enviados pelo CNJ sendo inseridos manualmente na planilha.
--	A Anoreg, periodicamente, envia comunicados para seus associados endereçados aos e-mails cadastrados na planilha. 
--	A Anoreg conta com uma funcionária dedicada exclusivamente para realizar toda essa operação de atualização e envio dos e-mails. 
--	Visando reduzir custos, o presidente da Anoreg ordenou que a funcionária seja demitida, e a operação deverá ser realizada pela secretária que, por sua vez, tem diversas outras ações diárias a fazer e não conseguirá realizar o trabalho da forma como é feito. 
-
-
-## Restrições técnicas
-
-O sistema deve ser desenvolvido com base nas tecnologias
- 
-- Apache
-- PHP
-- MySQL
-- HTML/CSS
-- JavaScript
-
-## Frameworks permitidos no desafio:
-- JavaScript: jQuery
-- CSS: Bootstrap
-- Framework PHP próprio
-
-`Pode ser utilizado o Composer`
-
 ## Arquivos necessários
  * [Planilha excel](https://github.com/p21sistemas/vikings/blob/master/Cart%C3%B3rios.xlsx) - Planilha atualizada com a lista de cartórios
  * [Arquivo XML](https://github.com/p21sistemas/vikings/blob/master/Cart%C3%B3rios-CNJ.xml) - Arquivo XML para importação
-
 
 ************
 Instalação
 ************
 
+Intruções de instalação e configuração
+---------------------------------------
+
+* Requerimento
+
+    - PHP >= 5.5
+    - MySQL
+
+    Extensões 
+        - cURL
+        - GD
+        - MySQLi
+
+Instalando com o assistente de instalação
+
+    Ambiente Linux 
+        - Atribua www-data como dono dos arquivos e pastas do sistema (sudo chown www-data -R *) - Execute dentro da raiz da pasta do sistema 
+        - Atribua permissão nos arquivos (sudo chmod 755 -R *) - Execute dentro da raiz da pasta do sistema 
+        - Crie o banco de dados no MySQL e um usuário dedicado ao banco
+        - Acesse a url do sistema e inicie o processo de instalação
+
+    Ambiente Windows
+        - Crie o banco de dados no MySQL e um usuário dedicado ao banco
+        - Acesse a url do sistema e inicie o processo de instalação
+
+Em caso de falha do instaldor vc pode instalar o sistema manualmente, seguindo o passo a passo abaixo.
+
+    - Crie o banco de dados no MySQL e um usuário dedicado ao banco
+    - Remova as linhas 540 e 541 do arquivo banco.sql e adicione o comando abaixo
+
+        INSERT INTO `usuarios` (`idUsuarios`, `nome`, `rg`, `cpf`, `rua`, `numero`, `bairro`, `cidade`, `estado`, `email`, `senha`, `telefone`, `celular`, `situacao`, `dataCadastro`, `permissoes_id`) VALUES
+            (1, 'Admin', 'MG-25.502.560', '600.021.520-87', 'Rua Acima', '12', 'Alvorada', 'Teste', 'MG', 'admin@admin.com', '$2y$10$lAW0AXb0JLZxR0yDdfcBcu3BN9c2AXKKjKTdug7Or0pr6cSGtgyGO', '0000-0000', '', 1, '2018-09-09', 1);
+    
+    - Execute o script de criação das tabelas - arquivo banco.sql 
+    - Dentro da pasta 'Application/Config' edite o arquivo 'database.php' e coloque os dados de acesso ao banco de dados.     
+    - Adiciente a url do sistema no arquivo 'Application/Config/config.php' na seguinte linha.  $config['base_url']	= 'http://localhost/sistema/'; --> A url deve terminar com /
+    - Altere a linha 332 no mesmo arquivo anterior para $config['encryption_key'] = '6f;~d5df;.s.d.fwe';
+    - Altere no arquivo index.php na raiz a linha 59 para -> define('ENVIRONMENT', 'production')
+    - Acesse a url do sistema
+
+    Dados de acesso instalando manualmente
+        - Email: admin@admin.com
+        - Senha: 123456
 
 
-Faça o download dos arquivos.
+Configurando cron job para envio de e-mail 
 
-copie os arquivo da pastar p21sistemas para a pasta do webserve ou da pasta do servidor local
-
-Extraia o pacote e copie para seu webserver.
-
-Acesse sua URL e inicie a instalação, é bem simples, basta preencher as informações no assistente de instalação .
-
+    Enviar emails pendentes a cada 2 minutos.
+        - */2 * * * * php /var/www/index.php email/process
+    Enviar emails com falha a cada 5 minutos.
+        - */5 * * * * php /var/www/index.php email/retry
 
 
 
 
-Tecnologias usadas
 
-bcit-ci/CodeIgniter
-
-twbs/bootstrap
-
-jquery/jquery
-
-jquery/jquery-ui
+----------------------------------------
+@adrianobr00 - adrianobr00@gmail.com
+----------------------------------------
 
 
 
-Requerimentos
-PHP >= 5.5.0
-MySQL
-servidor apache
