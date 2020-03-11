@@ -51,7 +51,7 @@ Configurando cron job para envio de e-mail
         - */5 * * * * php /var/www/index.php email/retry
 
 
-O logotipo se encontra dentro da pasta assets/img. Caso queira trocá-lo, basta substituir pelo logo desejado com o mesmo nome (logo.png). 
+
 
 
 ----------------------------------------

@@ -3,24 +3,41 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Dashboard extends MY_Controller {
-    /*
+   /**
+* Classe controladora da painel inicial ou Dashboard.
+    * nessa classe ele carrega todas views  e model do sistema inicial, incluindo o javascript que esta
+    * na view footer
+*
+* Gerenciamento de usuários e políticas de acesso.
+*
+* Essa aplicação requer CodeIgniter 3.+.
+*
+* @package    Project extends CodeIgniter
+* @subpackage 
+* @author     Adriano alves <adrianobr00@gmail.com>
+* @since      v1.0
+* @category   Controller
+*/
 
-      para acessar o my controller entre em core my controle,
-
-      todo o gerenciamento do careqpio
-
-
-
-     */
-
+    
+    
+    /**
+    *nessa função ele carrega sem os dados do usuario como padrão.
+    *
+    * @access public
+    * @return array dados[usuario]
+    */
     public function __construct() {
         parent::__construct();
         $this->dados['usuario'] = $this->MinhaConta_Model->getDados();
-        $this->load->helper('url');
-        $this->load->helper(array('form', 'url'));
-        $this->load->library('excel');
-         $this->load->library('email');
+      
     }
+    /**
+    * A index carrega a model todos os dados da tabela xml, já convertendo em html .
+    *
+    * @access public
+    * @return array dados[xml] 
+    */
 
     public function index() {
         $this->dados['xml'] = $this->Dashboard_Model->getDadosXML();
@@ -30,6 +47,14 @@ class Dashboard extends MY_Controller {
         $this->load->view('dashboard/dashboard');
         //$this->load->view('tema/footer');
     }
+    
+     /**
+    * A Função contato recebe string  menssagem e enviar para o email do destinatário
+      * sendo que essa função mail já e nativa do proprio codeigneter;
+    *
+    * @access public
+    * @return string menssagem
+    */
 
     public function Contato() {
 
@@ -56,17 +81,15 @@ class Dashboard extends MY_Controller {
             
         }
     
-
-    /* ########################################################>>> titulo <<<###############################################
-      ################################################################>>>  titulo <<<################################################
-     * #######################################################>>>  titulo <<<###############################################    */
-
-
-
-
-    /* ########################################################>>> sub titulo <<<###############################################
-      ################################################################>>> sub titulo <<<################################################
-     * #######################################################>>> sub titulo <<<###############################################       */
+        
+         /**
+    * A Função salvarXML Atualiza os dados tabela xml com o arquivo anexado em $_Files, sendo que 
+          * pode ser em XML ou excel, seguindo a sequencia dos dados da tabela.
+          * Nessa função está incluso as biblioteca PHPExcee SimpleXml, que converte os dados em html para xml e excel.
+    *
+    * @access public
+    * @return string menssagem
+    */
 
     public function salvarXML() {
 
