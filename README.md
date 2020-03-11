@@ -1,7 +1,9 @@
-###Seja bem vindo 
+Seja Bem vindo 
+---------------------------------------
 
 ###################
-Quem sou eu?Clique na imagem abaixo:)
+Quem sou eu? clique na imagem abaixo.
+---------------------------------------
 ###################
 [![DNA P21 SISTEMAS](http://lounge.obviousmag.org/um_ponto_no_infinito/quem-sou-eu.jpg)](https://www.youtube.com/watch?v=TygQWqYeHAc&feature=youtu.be)
 
