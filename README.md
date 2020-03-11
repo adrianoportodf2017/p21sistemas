@@ -1,19 +1,27 @@
 Seja Bem vindo 
 ---------------------------------------
 
-###################
-Quem sou eu? clique na imagem abaixo.
----------------------------------------
-###################
-[![DNA P21 SISTEMAS](http://lounge.obviousmag.org/um_ponto_no_infinito/quem-sou-eu.jpg)](https://www.youtube.com/watch?v=TygQWqYeHAc&feature=youtu.be)
+
 
 ## Arquivos necessários
  * [Planilha excel](https://github.com/p21sistemas/vikings/blob/master/Cart%C3%B3rios.xlsx) - Planilha atualizada com a lista de cartórios
  * [Arquivo XML](https://github.com/p21sistemas/vikings/blob/master/Cart%C3%B3rios-CNJ.xml) - Arquivo XML para importação
 
+
+************
+* Caso não consiga instalar o sistema por favor entre em contato pelo email: adrianobr00@gmail.com
+* Você pode  acessar o link abaixo para ver o sistema em funcionamento em uma hospedagem web.
+* [Link Sistema](https://desafiop21.000webhostapp.com) 
+* O sistema já esta com modulo de login para segurança, vc pode cadastrar um novo usuário pelo proprio sistema ou acessar com os dados abaixo.
+* login: admin@admin.com
+* Senha: 123456
+
+************
+
 ************
 Intruções de instalação e configuração
 ---------------------------------------
+
 ************
 
 
@@ -50,7 +58,7 @@ Em caso de falha do instaldor vc pode instalar o sistema manualmente, seguindo o
     
     - Execute o script de criação das tabelas - arquivo banco.sql 
     - Dentro da pasta 'Application/Config' edite o arquivo 'database.php' e coloque os dados de acesso ao banco de dados.     
-    - Adiciente a url do sistema no arquivo 'Application/Config/config.php' na seguinte linha.  $config['base_url']	= 'http://localhost/sistema/'; --> A url deve terminar com /
+    - Adiciente a url do sistema no arquivo 'Application/Config/config.php' na seguinte linha.  $config['base_url']	= 'http://localhost/p21sistema/'; --> A url deve terminar com /
     - Altere a linha 332 no mesmo arquivo anterior para $config['encryption_key'] = '6f;~d5df;.s.d.fwe';
     - Altere no arquivo index.php na raiz a linha 59 para -> define('ENVIRONMENT', 'production')
     - Acesse a url do sistema
@@ -72,8 +80,12 @@ Configurando cron job para envio de e-mail
 
 
 ----------------------------------------
-@adrianobr00 - adrianobr00@gmail.com
+@adrianoportodf2017- adrianobr00@gmail.com
 ----------------------------------------
 
 
+Quem sou eu? clique na imagem abaixo.
+---------------------------------------
+
+[![quem sou eu](http://lounge.obviousmag.org/um_ponto_no_infinito/quem-sou-eu.jpg)](https://www.youtube.com/watch?v=TygQWqYeHAc&feature=youtu.be)
 
