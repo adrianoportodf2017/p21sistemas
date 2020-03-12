@@ -178,3 +178,4 @@ class Usuarios extends CI_Controller {
     /* FUNCAO PARA ExcLUIR USUARIOS */
 
  }
+

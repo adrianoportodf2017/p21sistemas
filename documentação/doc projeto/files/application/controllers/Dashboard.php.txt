@@ -25,12 +25,7 @@ class Dashboard extends MY_Controller {
      */
     public function __construct() {
         parent::__construct();
-        
-         $this->dados['usuario'] = $this->MinhaConta_Model->getDados();
-        $this->load->helper('url');
-        $this->load->helper(array('form', 'url'));
-        $this->load->library('excel');
-         $this->load->library('email');
+        $this->dados['usuario'] = $this->MinhaConta_Model->getDados();
     }
 
     /**
@@ -103,7 +98,7 @@ class Dashboard extends MY_Controller {
      * @return array json_encode
      */
 
- public function salvarXML() {
+    public function salvarXML() {
 
 
         if (isset($_FILES) && $_FILES != NULL && $_FILES['XML']['name'] != "") {
@@ -337,3 +332,4 @@ class Dashboard extends MY_Controller {
     }
 
 }
+

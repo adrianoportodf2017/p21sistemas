@@ -31,10 +31,6 @@ class MY_Controller extends CI_Controller {
             $this->load->model('Dashboard_Model', '', true);
             $this->load->library('session');
             $this->load->helper(array('form', 'codegen_helper'));
-            $this->load->helper('url');
-            $this->load->helper(array('form', 'url'));
-            $this->load->library('excel');
-            $this->load->library('email');
         }
     }
 
